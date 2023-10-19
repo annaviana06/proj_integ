@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOMAQUETE IFPAR</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="botao">
+        <button onclick="scrollToTop()" id="btnScrollToTop" title="Voltar ao Topo"><img src="../img/seta.svg" alt=""></button>
+
+        <script src="../js/main.js"></script>
+    </div>
+    <header class="cabeçalho">
+        <div class="container">
+           <div class="menu-icon">
+            <input type="checkbox" id="menu" class="container__botao"  >
+            <label for="menu">
+                <span class="cabeçalho__menu-hamburguer container__imagem" ></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo" >Título</li>
+                <li class="lista-menu__item">
+                    <a href="index.html" class="lista-menu__link">Home</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="menu1.html" class="lista-menu__link">MENU 1</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="menu2.html" class="lista-menu__link">MENU 2</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="menu3.html" class="lista-menu__link">MENU 3</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="menu4.html" class="lista-menu__link">MENU 4</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="maquete.html" class="lista-menu__link">IMAGENS MAQUETE</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+            <p>NANOBIOCELULAR</p>
+        </div>
+        <div class="container">
+            <img src="../img/logo-ifrn.png" class="logo" alt="Logo" class="container__imagem">
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Nanotecnologia e suas aplicações</h2>
+        <p class="banner__texto">A nanotecnologia tem desempenhado um papel revolucionário na área da biologia, abrindo novas possibilidades e perspectivas emocionantes. Ao manipular materiais em escala nanométrica, os cientistas conseguem explorar e controlar processos biológicos de uma maneira nunca antes imaginada. A nanotecnologia na biologia permite a criação de nanodispositivos que podem ser usados ​​para a entrega direcionada de medicamentos, uma observação detalhada de processos</p>        
+    </section>
+    
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">@nosso insta</h2>
+        
+
+        <div class="card">
+            <!-- 1º linha -->
+            <div class="card__descrição">
+                <!-- 1º coluna -->
+                <div class="descrição">
+                    <h3 class="descrição__titulo">Título para painel de destaque</h3>
+                    <h2 class="descrição__titulo-subtitulo">Subtítulo do painel de destaque</h2>
+                    <p class="descrição__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, laborum exercitationem libero qui neque excepturi hic corrupti, modi incidunt natus sint omnis necessitatibus quidem, numquam est quisquam repellat tenetur explicabo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <center><section class="card__video">
+        <video class="video" src="../video/nanotec.mp4" controls> </video>
+    </section>
+    </center>
+    
+
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">TÓPICOS</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Tópico 1</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Tópico 2</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Tópico 3</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Tópico 4</a>
+            </li>
+          
+        </ul>
+    </section>
+
+    <section class="contato">
+        <h2 class="contato__titulo">Título de painel final</h2>
+        <p class="contato__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est corrupti unde repellat nulla accusantium hic similique reiciendis sed. Animi, ipsam! Cumque, quas adipisci? Tempora perspiciatis nulla veniam magni animi aliquam.</p>
+    </section>
+
+    <hr />
+
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">IFRN - BIOMAQUETE</h2>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>

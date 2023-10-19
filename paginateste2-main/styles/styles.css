@@ -1,0 +1,309 @@
+
+@import url("../video/video.css");
+/* cores: azul esc - #031634
+          azul med - #033649
+          azul cla - #036564
+          rosa (cor de fundo) - #e8ddcb
+          azul do card texto - #548c82
+          azul card video - #79b7b4
+*/
+
+body {
+    background-color: #e8ddcb;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Estilo para o botão "Voltar ao Topo" */
+#btnScrollToTop {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background-color: #548c82;
+    color: white;
+    cursor: pointer;
+  }
+  
+#btnScrollToTop:hover {
+    background-color: #548c82b9;
+}
+  
+
+/*----------------------------------------------banner---------------------------------------------------*/
+.banner {
+    background: #031634/*#033649 #ffffff*/;
+    color:#0e0d0d; /*titulo painel/ lorem*/
+    text-align: center;
+    padding: 2.5em 2em;
+}
+.banner__titulo {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(240, 248, 255, 0.76);
+
+}
+.logo {
+    width: 160px;
+}
+.banner__texto {
+    font-weight: 500;
+    margin: 1em 0;
+    color: rgba(240, 248, 255, 0.836)/*rgb(15, 17, 19)*/;
+}
+.banner__pesquisa {
+    background-color: transparent;
+    border: 1px solid  #92A699;
+    color:  #92A699;
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+}
+
+
+
+/*----------------------------------------------------carrossel------------------------------------------*/
+.carrossel__titulo {
+    color:#033649;
+    background-color: #e8ddcb;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+}
+.caroussel-item img{
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    
+}
+/*.carouselExampleIndicators {
+    position: initial;
+    margin: .5em 0;
+}
+.carousel-control-prev, 
+.carousel-control-next {
+    display: none;
+}
+.carousel-item img {
+    width: 100%;
+}*/
+
+/*.swiper-slide img {
+    width: 100%;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+.swiper-pagination {
+    position: initial;
+    margin: .5em 0;
+}*/
+.card__descrição {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+.card__botões {
+    display: flex;
+    justify-content: space-between;
+}
+.botões {
+    display: flex;
+}
+.card {
+    background: #548c82; /*caixas*/
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.card__video{
+    background: #79b7b4; /*caixas*/
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+}
+
+.descrição__titulo {
+    color:  #0e0d0d; 
+    font-weight: 700;
+}
+.descrição__titulo-subtitulo {
+    color: #0e0d0d; 
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+.descrição__texto {
+    color:  #0e0d0d; 
+    font-size: 14px;
+}
+/*.botões__item {
+    margin: 0 0.5em;
+}
+.botões__ancora {
+    background-color: #0e0d0d;
+    padding: 1em 2.2em;
+    color:  #7dad93;
+    font-weight: 700;
+    text-decoration: none;
+}*/
+.img_carrossel {
+    height: 280px;
+}
+@media (min-width: 1024px) {
+    .img_carrossel {
+        height: 600px;
+    }
+}
+/*-------------------------------------------contato---------------------------------------------------*/
+.contato {
+    background-color:  #ffffff;
+    padding: 1em;
+}
+.contato__titulo,
+.contato__texto {
+    background: #0e0d0d;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+.contato__texto {
+    font-weight: 300;
+    margin: 1em 0;
+}
+.contato__email {
+    padding: 1em;
+    border: 1px solid  #0e0d0d; 
+    border-radius: 24px;
+    width: 90%;
+    color: #0e0d0d; 
+}
+
+/*------------------------------------------------header----------------------------------------------*/
+.cabeçalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    color: aliceblue;
+}
+.cabeçalho {
+    background-color: #036564/*#D92353 #34acdbda*/;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.container {
+    display: flex;
+    align-items: center;
+    color: #e8ddcb;
+}
+.container__imagem {
+    padding: 1em;
+}
+
+.lista-menu {
+    
+    position: absolute;
+    top: 100%;
+    width: 0vw;
+    z-index: 2;
+    transition: width .3s ease-in-out;
+    overflow: hidden;
+}
+
+.container__botao:checked~.lista-menu {
+    width: 60vw;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
+    background-color:  #e8ddcb ;
+}
+
+.lista-menu__titulo{
+    color: #031634 ; 
+    font-weight: 700;
+}
+
+.lista-menu__link{
+    background: #031634;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.container__botao {
+    display: none;
+    background-color: antiquewhite;
+}
+/*-------------------------------------------------------rodapé----------------------------------------*/
+hr {
+    margin: 0;
+}
+.rodapé {
+    background-color: #036564;
+    padding: 1em;
+}
+/*-------------------------------------------------topicos----------------------------------------------*/
+.tópicos {
+    background:  #038c8c33;
+    text-align: center;
+    padding: 1em 0;
+}
+.tópicos__titulo {
+    color: #0e0d0d; 
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+.tópicos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.tópicos__item {
+    margin: 2em 0.5em;
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin-bottom: 10px;
+}
+.tópicos__link {
+    color: #0e0d0d; 
+    padding: 1em;
+    background-color: #036161;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    
+}

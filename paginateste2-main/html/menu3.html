@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOMAQUETE IFPAR</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="botao">
+        <button onclick="scrollToTop()" id="btnScrollToTop" title="Voltar ao Topo"><img src="../img/seta.svg" alt=""></button>
+
+        <script src="../js/main.js"></script>
+    </div>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao"  >
+            <label for="menu">
+                <span class="cabeçalho__menu-hamburguer container__imagem" ></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo" >Título do menu</li>
+                <li class="lista-menu__item">
+                    <a href="index.html" class="lista-menu__link">Home</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="menu1.html" class="lista-menu__link">MENU 1</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="menu2.html" class="lista-menu__link">MENU 2</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="menu3.html" class="lista-menu__link">MENU 3</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="menu4.html" class="lista-menu__link">MENU 4</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="maquete.html" class="lista-menu__link">IMAGENS MAQUETE</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <p>NANOBIOCELULAR</p>
+        </div>
+        <div class="container">
+            <img src="../img/logo-ifrn.png" class="logo" alt="Logo" class="container__imagem">
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">TEMA VÍDEO 3</h2>
+    </section>
+    <section class="card__video">
+       <video class="video" src="../video/nanotec.mp4" controls> </video>
+    </section>
+    <section class="banner">
+        <h2 class="banner__texto">RESUMO VÍDEO 3</h2>
+    </section>
+    <section class="contato">
+        <h2 class="contato__titulo">Título de painel final</h2>
+        <p class="contato__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quasi vel molestiae nisi aspernatur temporibus earum repudiandae aliquid. Voluptas necessitatibus a amet, esse ducimus officiis totam optio! Reiciendis, doloribus pariatur?</p>
+    </section>
+    <hr/>
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">IFRN - BIOMAQUETE</h2>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
