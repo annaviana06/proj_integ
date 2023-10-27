@@ -38,7 +38,7 @@ body {
 
 /*----------------------------------------------banner---------------------------------------------------*/
 .banner {
-    background: #031634/*#033649 #ffffff*/;
+    background: #031634;
     color:#0e0d0d; /*titulo painel/ lorem*/
     text-align: center;
     padding: 2.5em 2em;
@@ -69,6 +69,9 @@ body {
 
 
 /*----------------------------------------------------carrossel------------------------------------------*/
+.titulo_video{
+    margin: 1em;
+}
 .carrossel__titulo {
     color:#033649;
     background-color: #e8ddcb;
@@ -86,34 +89,12 @@ body {
     align-items: center;
     
 }
-/*.carouselExampleIndicators {
-    position: initial;
-    margin: .5em 0;
-}
-.carousel-control-prev, 
-.carousel-control-next {
-    display: none;
-}
-.carousel-item img {
-    width: 100%;
-}*/
-
-/*.swiper-slide img {
-    width: 100%;
-}
-.swiper-button-prev,
-.swiper-button-next {
-    display: none;
-}
-.swiper-pagination {
-    position: initial;
-    margin: .5em 0;
-}*/
 .card__descrição {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5em;
 }
+
 .card__botões {
     display: flex;
     justify-content: space-between;
@@ -153,10 +134,12 @@ body {
     font-size: 18px;
     font-weight: 700;
     margin: 0.5em 0;
+
 }
 .descrição__texto {
     color:  #0e0d0d; 
-    font-size: 14px;
+    font-size: 16px;
+    text-indent: 2em;
 }
 /*.botões__item {
     margin: 0 0.5em;
@@ -240,6 +223,9 @@ body {
     overflow: hidden;
 }
 
+.lista-menu__item ul:hover{
+    color: #0e0d0d;
+}
 .container__botao:checked~.lista-menu {
     width: 60vw;
 }
@@ -254,6 +240,7 @@ body {
     color: #031634 ; 
     font-weight: 700;
 }
+
 
 .lista-menu__link{
     background: #031634;
