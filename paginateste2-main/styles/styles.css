@@ -56,6 +56,8 @@ body {
     font-weight: 500;
     margin: 1em 0;
     color: rgba(240, 248, 255, 0.836)/*rgb(15, 17, 19)*/;
+    /*text-align: justify;
+    text-indent: 2em;*/
 }
 .banner__pesquisa {
     background-color: transparent;
@@ -99,9 +101,10 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.botões {
+/*.botões {
     display: flex;
-}
+}*/
+
 .card {
     background: #548c82; /*caixas*/
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -125,8 +128,10 @@ body {
 
 }
 
+
 .descrição__titulo {
     color:  #0e0d0d; 
+    font-size: 22px;
     font-weight: 700;
 }
 .descrição__titulo-subtitulo {
@@ -140,6 +145,8 @@ body {
     color:  #0e0d0d; 
     font-size: 16px;
     text-indent: 2em;
+    margin: 1em;
+    text-align: justify;
 }
 /*.botões__item {
     margin: 0 0.5em;
