@@ -11,9 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
     
 
 </head>
@@ -23,7 +22,7 @@
         <button onclick="scrollToTop()" id="btnScrollToTop" title="Voltar ao Topo"><img src="../img/seta.svg" alt=""></button>
         <script src="../js/main.js"></script>
     </div>
-    <header class="cabeçalho">
+    <header class="cabeçalho" style="z-index: 2;">
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao"  >
             <label for="menu">
@@ -47,7 +46,7 @@
                     <a href="menu4.html" class="lista-menu__link">Nanomedicina no Brasil</a>
                 </li>
                 <li class="lista-menu__item">
-                    <a href="maquete.html" class="lista-menu__link">Aplicações</a>
+                    <a href="maquete.html" class="lista-menu__link">Aplicações e maquete</a>
                 </li>
             </ul>
         </div>
@@ -59,7 +58,48 @@
         </div>
     </header>
     <section class="banner">
-        <h2 class="banner__titulo">MAQUETE</h2>
+        <h2 class="banner__titulo">APLICAÇÕES DA NANOTECNOLOGIA NA MEDICINA</h2>
+    </section>
+    <div class="card">
+        <!-- 1º linha -->
+        <div class="card__descrição">
+            <!-- 1º coluna -->
+            <div class="descrição">
+                <h3 class="descrição__titulo">INOVAÇÕES DA NANOTECNOLOGIA</h3>
+                <p class="descrição__texto">
+                    A nanotecnologia trouxe inúmeras inovações para a área da Medicina, 
+                    revolucionando a forma como diagnósticos, tratamentos e procedimentos médicos são realizados. 
+                </p>
+                <h2 class="descrição__titulo-subtitulo"> Desenvolvimento de Biossensores:</h2>
+                <p class="descrição__texto">
+                    Uma das inovações da nanociência é o uso de biossensores. Esta tecnologia possibilita que doenças e condições sejam detectadas de maneira ágil. Para que estes dispositivos funcionem, três componentes são necessários: um elemento de reconhecimento, que costuma de ser um material biológico, além de um transdutor e uma unidade processadora.
+                    Por meio do elemento de reconhecimento, que pode ser uma proteína, pedaço de DNA ou outro elemento sensível ao material que precisa ser detectado, é possível passar esta informação por meio do transdutor, que transforma a informação em impulsos elétricos registrados na unidade processadora.
+                    Esta nanotecnologia na Medicina pode avançar não só com detecções já existentes, como os aparelhos que detectam o HIV e a diabetes, mas também novos dispositivos como o câncer e o Alzheimer.
+                </p>
+                <h2 class="descrição__titulo-subtitulo">Entrega de Fármacos ou Drug Delivery</h2>
+                <p class="descrição__texto">
+                    A nanotecnologia permite o uso de estratégias avançadas para entregar medicamentos de forma mais eficaz. O drug delivery baseado em nanotecnologia permite a administração direta de substâncias no tecido afetado, reduzindo efeitos colaterais.
+                </p>
+                <h2 class="descrição__titulo-subtitulo">Microagulhas</h2>
+                <p class="descrição__texto"> 
+                    As microagulhas são agulhas microscópicas que podem administrar substâncias diretamente através da pele de forma indolor e eficaz. Isso é especialmente promissor no tratamento de câncer, onde substâncias podem ser direcionadas para células cancerígenas.
+                </p>
+                <h2 class="descrição__titulo-subtitulo">Desobstrução de Vasos Sanguíneos</h2>
+                <p class="descrição__texto">
+                     A nanotecnologia oferece métodos menos invasivos para desobstruir veias e artérias obstruídas. Isso é feito com nanopartículas que atacam placas de gordura e outros lipídios, evitando procedimentos invasivos, como o uso de stents.
+                </p>
+                <h2 class="descrição__titulo-subtitulo">Sequenciamento de Nanoporos</h2>
+                <p class="descrição__texto">
+                    O sequenciamento de nanoporos é uma técnica avançada que permite o sequenciamento rápido e preciso do DNA. Essa tecnologia é mais rápida e custo-eficaz do que os métodos tradicionais de sequenciamento, facilitando a pesquisa genética e o desenvolvimento de tratamentos.
+                </p>
+            </div>
+        </div>
+    </div>
+                
+                
+
+    <section class="banner">
+        <h2 class="banner__titulo">IMAGENS DA MAQUETE</h2>
     </section>
     <!--Carrossel---------------------------------------------------------------------->
     <div id="carouselExampleIndicators" class="carousel slide">
@@ -70,13 +110,25 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../img/maq2.jpg" class="d-block w-100" alt="Primeiro slide">
+            <img src="../img/maq2.jpg" class="d-block w-100 img-fluid" alt="Primeiro slide">
+            <div class="carousel-caption">
+                <h5>Orgão com tumor</h5>
+                <p>A bola maior representa um órgão não especificado.</p>
+              </div>
           </div>
           <div class="carousel-item">
-            <img src="../img/maq1.jpg" class="d-block w-100" alt="Segundo slide">
+            <img src="../img/maq1.jpg" class="d-block w-100 img-fluid" alt="Segundo slide">
+            <div class="carousel-caption">
+                <h5>Orgão com tumor</h5>
+                <p>As mangueiras que estão ligadas ao órgão são as veias, caminho por onde passa as nanopartículas.</p>
+              </div>
           </div>
           <div class="carousel-item">
-            <img src="../img/maq3.jpg" class="d-block w-100" alt="Terceiro slide">
+            <img src="../img/maq3.jpg" class="d-block w-100 img-fluid" alt="Terceiro slide">
+            <div class="carousel-caption">
+                <h5>Orgão com tumor</h5>
+                <p>A partir do caminho feito através das mangueiras, chegam ao tumor as "nanopartículas".</p>
+              </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -87,9 +139,14 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+    </div>
+
     <section class="banner">
-        <h2 class="banner__texto">Legenda carrossel</h2>
+        <p class="banner__texto">A maquete representa um órgão que está com a presença de um tumor (muitas células 
+            cancerígenas). As mangueiras representam as veias e será o caminho para a nanotecnologia entrar em ação.
+            A didática da maquete, é proporcionas às pessoas o entendimento de que as nanotecnologia é precisa,
+            agindo diretamente onde deve agir, nesse caso, no tumor.
+        </p>
     </section>
     <section class="contato">
         <h2 class="contato__titulo">EQUIPE</h2>
@@ -101,7 +158,7 @@
     </section>
     
     <footer class="rodapé">
-        <h2 class="rodapé__titulo">IFRN - BIOMAQUETE</h2>
+        <h2 class="rodapé__titulo" style="font-size: 16px;">IFRN - BIOMAQUETE</h2>
     </footer>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
