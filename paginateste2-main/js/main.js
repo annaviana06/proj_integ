@@ -1,3 +1,4 @@
+
 // Função para mostrar ou ocultar o botão "Voltar ao Topo" conforme a rolagem
 window.onscroll = function() {
     scrollFunction();
@@ -16,5 +17,4 @@ window.onscroll = function() {
   function scrollToTop() {
     document.body.scrollTop = 0; // Para navegadores da web
     document.documentElement.scrollTop = 0; // Para IE, Firefox, Chrome, Opera, Safari
-  }
-  
+}

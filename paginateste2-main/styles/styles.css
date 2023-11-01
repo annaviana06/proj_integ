@@ -42,6 +42,7 @@ body {
     color:#0e0d0d; /*titulo painel/ lorem*/
     text-align: center;
     padding: 2.5em 2em;
+    padding-top: 80px;
 }
 .banner__titulo {
     font-size: 18px;
@@ -158,8 +159,8 @@ body {
     font-weight: 700;
     text-decoration: none;
 }*/
-.img_carrossel {
-    height: 280px;
+.carousel-item img {
+    height: 100%
 }
 @media (min-width: 1024px) {
     .img_carrossel {
@@ -209,7 +210,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .container {
     display: flex;
@@ -220,8 +224,7 @@ body {
     padding: 1em;
 }
 
-.lista-menu {
-    
+.lista-menu { 
     position: absolute;
     top: 100%;
     width: 0vw;
@@ -261,14 +264,7 @@ body {
     display: none;
     background-color: antiquewhite;
 }
-/*-------------------------------------------------------rodapé----------------------------------------*/
-hr {
-    margin: 0;
-}
-.rodapé {
-    background-color: #036564;
-    padding: 1em;
-}
+
 /*-------------------------------------------------topicos----------------------------------------------*/
 .tópicos {
     background:  #038c8c33;
@@ -300,4 +296,13 @@ hr {
     font-size: 14px;
     font-weight: 700;
     
+}
+
+/*-------------------------------------------------------rodapé----------------------------------------*/
+hr {
+    margin: 0;
+}
+.rodapé {
+    background-color: #036564;
+    padding: 1em;
 }
